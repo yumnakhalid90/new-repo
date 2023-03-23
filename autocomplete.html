@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.min.css">
+</head>
+<body>
+    <h1>Pakistan Cricket Team PLayers</h1>
+
+    <input type="text" placeholder ="Enter Your Name" id="txt1">
+    <script src="jquery.js"></script>
+  <script src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
+   <script>
+    //    $(document).readyfunction({},{})
+       $(document).ready(function(){
+           var players = ["Babar Azam","Shaheen Afridi","Mohammad Rizwan","Shadab Khan","Muhammad Hasnain","Abrar Ahmed","Hasan Ali","Imam-UL-Haq ","Fakhar Zaman","Haris Sohail", "Sarfaraz Ahmed"];
+           $("#txt1").autocomplete({
+               source:players
+
+           },{
+              delay:3000,
+            // //   disabled:false,
+              minlength:3
+           });
+       });
+       </script>
+
+</body>
+</html>
